@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=@CMAKE_INSTALL_FULL_LIBDIR@
+includedir=@CMAKE_INSTALL_FULL_INCLUDEDIR@
+
+Name: @CMAKE_PROJECT_NAME@
+Description: Libtmdb - An unofficial REST API consumer
+Version: @PROJECT_VERSION@
+Libs: -L${libdir} -l@LIBRARY_NAME@
+Requires.private: @PRIVATE_REQUIRES@
+Libs.private: @PRIVATE_LIBS@
+Cflags: -I${includedir}
